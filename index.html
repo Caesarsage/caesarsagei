@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUiz</title>
+    <link rel="stylesheet" href="css/quizapp.css">
+</head>
+<body>
+    <div id="quizContainer" class="container">
+        <div class="flex ">
+            <h4 id="progressText">
+                Question Counter 
+            </h4>
+            <div id="progressBar">
+                <div id="progressBarFull">
+
+                </div>
+            </div>
+            
+
+            <p>
+                Score Counter
+            </p>
+            <h3 id="scoreCounter">
+
+            </h3>
+        </div>
+        <div class="title">Quick Quiz</div>
+
+        <div id="question" class="question"> </div>
+            <div class="ul">
+                <label class="option"><input type="radio" name="option" value="1" ><span id="opt1" ></span> </label>
+                <label class="option"><input type="radio" name="option" value="2" ><span id="opt2" ></span> </label>
+                <label class="option"><input type="radio" name="option" value="3" ><span id="opt3" ></span> </label>
+                <label class="option"><input type="radio" name="option" value="4" ><span id="opt4" ></span> </label>
+                <button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Next</button>
+            </div>
+        </div>
+    <div id="footer">
+        &copy; 2020 CaesarSage. ALL RIGHTS RESERVED.
+    </div>
+    <script src="js/quizapp.js"></script>
+</body>
+</html>

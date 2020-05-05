@@ -1,0 +1,160 @@
+body{
+    font-family: "Roboto Stab", serif;
+    background: url("slide1.jpg");
+    height: 100%;
+    color: white;
+    font-family: serif;
+}
+
+#quizContainer{
+    background: transparent;
+}
+.container{
+    width: 60%;
+    margin: 3% auto;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px 30px rgb(24, 74, 97); 
+    padding-bottom: 35px;
+}
+.title{
+    padding: 20px;
+    text-align: center;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: white;
+}
+.question{
+    padding: 20px;
+    font-size: 22px;
+    background: #00038c;
+    border-radius: 20px;
+    margin: 10px 0 10px 0;
+    color: #f6f6f6;
+}
+.option{
+    cursor: pointer;
+    width: 45%;
+    display: inline-block;
+    padding: 10px 10px 10px 15px;
+    vertical-align: middle;
+    background: rgba(225, 225, 225, 0.5);
+    color: #000000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+/*.option:hover{
+    background: #00038c;
+    color: #f6f6f6;
+}*/
+.game-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+.flex{
+    box-shadow: 0 0 15px 25px rgb(24, 74, 97);
+    border-radius: 5px;
+    color:white;
+    padding-top: 5px;
+    text-align: center;
+    background-color: transparent;
+    text-transform: uppercase;
+    width: 190px;
+    margin:3% auto ;
+}
+p{
+    box-shadow: 0 0 5px 0 rgb(188, 199, 204);
+    font-weight: 700;
+}
+/*PROGRESS BAR STYLLING*/
+#progressBar{
+    box-shadow: 0 0 5px 0 rgb(188, 199, 204);
+    width: 187px;
+    height: 30px;
+}
+#progressBarFull{
+    height: 29px;
+    background-color: rgb(188, 199, 204);
+    width: 0%;
+}
+
+.next-btn{
+    border: none;
+    outline: none;
+    background: rgba(225, 225, 225, 0.5);
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    cursor: pointer;
+    float: right;
+    margin: 10;
+}
+.next-btn:hover{
+    background: #00038c;
+    color: #f6f6f6;
+}
+.result{
+    height: 100px;
+    text-align: center;
+    font-size: 50px;
+}
+.result a{
+    box-shadow: 0 0 5px 0 rgb(188, 199, 204);
+    text-decoration: none;
+    font-size: small;
+    text-align: center;
+    text-transform: uppercase;
+}
+.flexlast{
+    padding: 5px;
+}
+.btn{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    font-size: medium;
+    margin: 10px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    box-shadow: 0 0 5px 0 rgb(188, 199, 204);
+}
+.btn[disabled]:hover{
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+.option input:checked .option {
+    background: none; 
+    color: #000000;
+}
+/*=========== FOOTER STYLE =============== */
+#footer{
+    position: absolute;
+    left: 40%;
+    text-align: center;
+}
+#foot{
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    text-align: center;
+}
+/*CLASS APPLIED TO JS*/
+.correct{
+    background: green;
+    color: white;
+}
+.pointer-fix{
+     pointer-events: none;
+}
+.wrong{
+    background-color: red;
+    color: white;
+}
